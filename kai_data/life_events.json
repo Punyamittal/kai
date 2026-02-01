@@ -1,0 +1,64 @@
+{
+  "events": [
+    {
+      "description": "actually had a decent morning",
+      "category": "daily",
+      "tone": "positive",
+      "timestamp": 1769953820.8547502
+    },
+    {
+      "description": "couldn't focus on creative stuff",
+      "category": "creative",
+      "tone": "negative",
+      "timestamp": 1769953820.8547502
+    },
+    {
+      "description": "finished a project early",
+      "category": "work",
+      "tone": "positive",
+      "timestamp": 1769953820.8547502
+    },
+    {
+      "description": "Mira's away for work \u2014 missing her",
+      "category": "relationship",
+      "tone": "neutral",
+      "timestamp": 1769953820.8574157
+    },
+    {
+      "description": "got a weird request from a client",
+      "category": "work",
+      "tone": "neutral",
+      "timestamp": 1769953832.2849221
+    },
+    {
+      "description": "met a new client",
+      "category": "work",
+      "tone": "neutral",
+      "timestamp": 1769955020.426129
+    },
+    {
+      "description": "went for a walk",
+      "category": "daily",
+      "tone": "positive",
+      "timestamp": 1769974689.7729146
+    },
+    {
+      "description": "had to redo a deliverable",
+      "category": "work",
+      "tone": "negative",
+      "timestamp": 1769976489.1869075
+    },
+    {
+      "description": "got a weird request from a client",
+      "category": "work",
+      "tone": "neutral",
+      "timestamp": 1769976759.232883
+    },
+    {
+      "description": "nailed a client call",
+      "category": "work",
+      "tone": "positive",
+      "timestamp": 1769977870.9481485
+    }
+  ]
+}

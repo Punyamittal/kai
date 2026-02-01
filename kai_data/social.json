@@ -1,0 +1,44 @@
+{
+  "relationships": {
+    "family": {
+      "id": "family",
+      "role": "family",
+      "trust": 0.7,
+      "attachment": 0.7,
+      "last_contact": 1769897705.8399196,
+      "conflict": 0.0
+    },
+    "friend": {
+      "id": "friend",
+      "role": "friend",
+      "trust": 0.6,
+      "attachment": 0.5,
+      "last_contact": 1769897705.8399196,
+      "conflict": 0.0
+    },
+    "partner": {
+      "id": "partner",
+      "role": "partner",
+      "trust": 0.5,
+      "attachment": 0.4,
+      "last_contact": 1769897705.8399196,
+      "conflict": 0.0
+    },
+    "mentor": {
+      "id": "mentor",
+      "role": "mentor",
+      "trust": 0.6,
+      "attachment": 0.4,
+      "last_contact": 1769897705.8399196,
+      "conflict": 0.0
+    },
+    "user": {
+      "id": "user",
+      "role": "user",
+      "trust": 1.0,
+      "attachment": 1.0,
+      "last_contact": 1769977948.5529196,
+      "conflict": 0.0
+    }
+  }
+}
