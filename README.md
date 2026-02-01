@@ -423,11 +423,3 @@ Copy code
 
 ---
 
-If you want, next I can help you make:
-
-✅ Internship Pitch  
-✅ OpenAI Email  
-✅ Research Paper Format  
-✅ Demo Video Script  
-
-Just say the word 😄🔥
