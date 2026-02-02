@@ -59,6 +59,12 @@
       "category": "work",
       "tone": "positive",
       "timestamp": 1769977870.9481485
+    },
+    {
+      "description": "missed a call from my sister",
+      "category": "social",
+      "tone": "negative",
+      "timestamp": 1769981089.1672747
     }
   ]
 }

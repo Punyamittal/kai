@@ -118,9 +118,10 @@ class EmotionalState:
         - All emotions decay gently toward baseline (0.95 multiplier)
         - Sadness > 0.6 → gentle recovery (hope up, sadness down)
         - Anger > 0.4 → cooldown
-        - Emotion floor: minimum hope/joy/confidence (no free-fall into despair)
+        - Emotion floor: minimum dopamine/serotonin/testosterone (no free-fall into despair)
+        - Emotion ceiling: max cortisol/amygdala/loneliness (no permanent despair/fear)
         """
-        from kai.config import EMOTION_FLOOR
+        from kai.config import EMOTION_FLOOR, EMOTION_CEILING
         
         # Gentle decay on all main hormones (prevents runaway)
         for attr in ["dopamine", "cortisol", "oxytocin", "serotonin", "adrenaline", 
@@ -142,11 +143,19 @@ class EmotionalState:
                 self.cortisol = max(0.1, self.cortisol - 0.05)
                 self.serotonin = min(1.0, self.serotonin + 0.03)
         
-        # Emotion floor: enforce minimum hope, joy, confidence (prevents emotional free-fall)
+        # Emotion floor: enforce minimum positive hormones (prevents emotional free-fall)
         for attr, floor in EMOTION_FLOOR.items():
-            val = getattr(self, attr)
-            if val < floor:
-                setattr(self, attr, floor)
+            if hasattr(self, attr):
+                val = getattr(self, attr)
+                if val < floor:
+                    setattr(self, attr, floor)
+        
+        # Emotion ceiling: cap negative hormones (prevents permanent despair/fear)
+        for attr, ceiling in EMOTION_CEILING.items():
+            if hasattr(self, attr):
+                val = getattr(self, attr)
+                if val > ceiling:
+                    setattr(self, attr, ceiling)
         
         self._clamp()
 

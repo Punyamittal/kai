@@ -62,12 +62,18 @@ KAI_IDENTITY = {
 }
 
 # Emotion Floor: minimum values to prevent emotional collapse (no free-fall into despair)
+# These are ACTUAL EmotionalState attributes (not derived values like hope/joy)
 EMOTION_FLOOR = {
-    "hope": 0.25,
-    "joy": 0.15,
-    "dopamine": 0.2,
-    "serotonin": 0.25,
-    "testosterone": 0.2,  # confidence floor
+    "dopamine": 0.2,       # joy floor (joy = dopamine * (1 - cortisol))
+    "serotonin": 0.25,     # hope floor (hope = serotonin * (1 - cortisol))
+    "testosterone": 0.2,   # confidence floor
+}
+
+# Emotion CEILING: max values to prevent runaway (cortisol/amygdala shouldn't stay maxed)
+EMOTION_CEILING = {
+    "cortisol": 0.75,      # prevents permanent despair
+    "amygdala": 0.7,       # prevents permanent fear
+    "loneliness": 0.7,     # prevents permanent isolation feeling
 }
 
 # Human-readable hormone explanations (for display after chat)

@@ -1153,7 +1153,7 @@
       "weight": 0.7083678500616244,
       "layer": "ltm",
       "lesson": "",
-      "recalled_count": 594
+      "recalled_count": 630
     },
     {
       "id": "b01ce7fd5b607603",
@@ -1237,7 +1237,7 @@
       "weight": 0.647948199378267,
       "layer": "ltm",
       "lesson": "",
-      "recalled_count": 512
+      "recalled_count": 548
     },
     {
       "id": "7db7c2110e784092",
@@ -1258,7 +1258,7 @@
       "weight": 0.6580154666666667,
       "layer": "ltm",
       "lesson": "",
-      "recalled_count": 508
+      "recalled_count": 544
     }
   ],
   "conscious": [],
